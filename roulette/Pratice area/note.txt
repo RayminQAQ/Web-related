@@ -1,0 +1,14 @@
+1. window.document.write() -> document.write() 
+    document.write() 其實可以寫成 window.document.write()
+    但是因為 window 屬於『全域物件』，故可省略。
+  - 補充：window.prompt() -> prompt()
+
+2. 取得網頁html元素方法：統一由document物件內的Property屬性(ex: write, getElementById)
+
+3. The DOM Programming Interface
+    In the DOM, all HTML elements are defined as objects.
+    The programming interface is the properties and methods of each object.
+    -> 比較：Method、Property
+        - Method: A method is an action you can do (like add or deleting an HTML element).
+        - Property: A property is a value that you can get or set (like changing the content of an HTML element).
+    <參考網址>：https://www.w3schools.com/js/js_htmldom_methods.asp

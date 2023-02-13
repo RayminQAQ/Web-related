@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST AREA</title>
+    <link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<body>
+    <h1>test.js playground</h1>
+    <script src="test.js"></script>
+
+    <!-- 分隔線-->  <!-- 分隔線-->
+
+    <h1>test_advance.js playground</h1>
+    <div class="container">
+        <!--取得並操作html元素：DOM-->
+        <div class="content" style = "margin-left: 20px;">
+            <h3 class="title">Content:</h3>
+        </div>
+        <!--Event listener-->
+        <button id="btn">click test_advance.js button</button>
+        <img id="pic" src="http://fakeimg.pl/100x100">
+    </div>
+    <script src="test_advance.js"></script>
+
+    <hr/>
+
+    <!-- 分隔線-->  <!-- 分隔線-->
+    
+    <div>
+        筆記：
+        <code>document.getElementsByClassName("title"); </code>
+        回傳的一個node list，一種 Browser API
+    </div>
+    <br/>
+    <div>
+        筆記：Event listener的兩種使用方式：
+            <br/>
+            <ul>
+                <li class="note">insert into html tag</li>
+                    在 html 檔案：
+                    <code>
+                        &ltbutton onclick="func(this)"&gt點擊這裡&lt/button&gt
+                    </code>
+                    <br/>
+                    在 js 檔案：
+                    <code>func(element){...};</code>
+                    <br/><br/>
+                <li class="note">use AddEventListener("attribute", function(){...})</li>
+                    在 html 檔案：
+                    <code>
+                        &ltbutton id="btn"&gt點擊這裡&lt/button&gt
+                    </code>
+                    <br/>
+                    在 js 檔案：
+                    <code>
+                        document.getElementById("btn").addEventListener("click", function(){...})
+                    </code>
+                    <br/><br/>
+                <li class="note">兩者的差別：在html上屬性多加了on，在js則維持原意 => html:"onclick" / js:"click"</li>
+            </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.container{
+    height: 100%;
+    text-align: center;
+}
+
+.roulette{
+    width: 300px;
+    height: 300px;
+}
+
+.reference{
+    margin-top: 20px;
+    background-color: #cdd;
+}

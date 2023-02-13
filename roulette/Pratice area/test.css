@@ -1,0 +1,14 @@
+h1:hover{
+    color: blue;
+}
+
+.note{
+   font-weight: bold; 
+}
+
+code{
+    display: inline-block;
+    padding: 0.35em;
+    color: #eee;
+    background: #333;
+}
